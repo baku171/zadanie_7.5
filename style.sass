@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway:900')
+
+$grey: #313332
+$hover-blue: #00C7E8
+
+body 
+	margin: 0
+	font-family: 'Open Sans', sans-serif
+
+* 
+	box-sizing: border-box
+
+/*  Header  */
+
+header 
+	background: $grey
+
+.container 
+	max-width: 1200px
+	margin: 0 auto
+
+header>nav>div
+	ul 
+		margin: 0
+		padding: 0
+		list-style-type: none
+		float: right
+
+	li 
+		display: inline-block
+
+	a 
+		display: block
+		line-height: 50px
+		padding: 0 20px
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		&:hover 
+			background: #686d6a
+	img 
+		padding: 10px 0
+
+
+/*  Hero  */
+
+.hero 
+	background-image: url("https://static.pexels.com/photos/163034/old-retro-antique-vintage-163034.jpeg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 100%
+	height: 500px
+
+.slogan 
+	background-color: rgba(102,63,5,0.5)
+	float: right
+	max-width: 700px
+	padding: 20px 100px 20px 40px
+	margin-top: 25vh
+	line-height: 10px
+    
+	h1 
+		color: #fff
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 800
+
+		small 
+			font-weight: 300
+			font-size: 30px
+
+
+/* Grid */
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	padding: 10px
+	text-align: center
+ 
+.row:before,
+.row:after 
+	content: ""
+	display: table 
+	clear: both
+ 
+ 
+/* column width */
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+/* column margins */
+.col-offset-0 
+	margin-left: 0
+.col-offset-1 
+	margin-left: 8.33%
+.col-offset-2 
+	margin-left: 16.66%
+.col-offset-3 
+	margin-left: 25%
+.col-offset-4 
+	margin-left: 33.33%
+.col-offset-5 
+	margin-left: 41.66%
+.col-offset-6 
+	margin-left: 50%
+.col-offset-7 
+	margin-left: 58.33%
+.col-offset-8 
+	margin-left: 66.66%
+.col-offset-9 
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+
+/* Benefits */
+.benefits 
+	margin: 50px auto
+	text-align: center
+	
+	.col-4
+		&:hover 
+			button
+				background-color: $hover-blue
+			h3
+				color: $hover-blue
+
+.icon-btn 
+	height: 75px
+	width: 75px
+	border: 0
+	border-radius: 10%
+	color: #FFF
+	margin: 5px
+	cursor: pointer
+	font-size: 40px
+	line-height: 75px
+	background: $grey
+
+
+.container 
+	h1,
+	h3 
+		text-transform: uppercase
+
+ 
+/* Gallery */
+
+.photo 
+	float: left
+	height: 175px
+	position: relative
+	padding: 0
+	text-align: center
+	&:hover .layer
+		display: block
+		width: 100%
+		height: 100%
+
+.gallery 
+	width: 100%
+	height: 350px
+	margin-bottom: 110px
+	img 
+		width: 100%
+		height: 100%
+		cursor: pointer
+		object-fit: cover    
+
+.layer 
+	display: none
+	position: absolute
+	background-color: rgba(0,0,0, 0.5)
+
+.fa-camera-retro, .fa-search 
+	color: white
+	padding-top: 75px
+	text-align: center
+
+.fa-search 
+	padding-left: 15px
+
+
+/* Team */
+
+.team-btn 
+	height: 200px
+	width: 200px
+	border: 0
+	border-radius: 50%
+	cursor: pointer
+	background: #535456 
+	&:hover 
+		background-color: rgba(83, 84, 86, 0.6)
+		span
+			visibility: visible	
+	span 
+		display: block
+		visibility: hidden
+		font-weight: bold
+		font-size: 20px
+		color: #fff
+
+.team 
+	div 
+		width: 100%
+		padding-top: 100%
+		position: relative
+		
+	button 
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		object-fit: cover
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		
+	h3 
+		text-align: center
+
+
+/* Picture section */
+.picture 
+	width: 100%
+	background: $grey
+
+[class*="picture-"] 
+	padding-top: 60px
+
+
+.picture-txt 
+	text-align: left
+	color: #fff
+	font-size: 20px
+	padding-right: 100px
+
+.picture-img img 
+	float: right
+	width: 70%
+	height: 100%
+	object-fit: cover
+
+
+/* Numbers */
+
+.numb 
+	h1 
+		font-family: 'Raleway', sans-serif
+		font-size: 50px
+		font-weight: bold
+	h3 
+		text-transform: uppercase
+		color: $hover-blue
+
+
+/* Footer */
+
+footer
+	width: 100%
+	/*height: 350px*/
+	background: $grey
+	color: #fff
+	.info 
+		/*height: 300px*/
+		text-align: left
+		margin: 50px
+
+	.copyright 
+		height: 50px
+		background: #252726
+		text-align: center
+		font-size: 10px
+
+	.foot 
+		text-align: left
+
+	h1 
+		text-transform: uppercase
+
+.contact div 
+	text-align: left
+	padding: 0
+
+.social 
+	height: 40px
+	width: 40px
+	color: #fff
+	background: $hover-blue
+	border: 0
+	margin: 10px
+	cursor: pointer
+
+
+@media(min-width: 768px) and (max-width: 1199px) 
+	/*Header*/
+	header>nav>div
+		img 
+			float: left
+	
+		ul 
+			float: left
+	
+		a 
+			padding: 0 5px
+	
+	/*Grid*/
+	[class*="col-offset"] 
+		margin-left: 0
+	
+	/* Team */
+	.team button 
+		width: 80%
+		height: 80%
+		margin: auto
+	
+
+@media (max-width: 767px) 
+	.container 
+		width: 100%
+	
+	/*Header*/
+	header 
+		width: 100%
+	header>nav
+		div 
+			float: none
+			text-align: center
+		ul 
+			float: none
+			text-align: center
+		li 
+			float: none
+			display: block
+			text-align: center
+	
+	.slogan 
+		padding: 10px 10px 10px 20px
+	
+	/*Gallery*/
+	.layer 
+		display: block
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,0.1)
+	
+	/*Grid*/
+	[class*="col-offset"] 
+		margin-left: 0
+	
+	/* Team */
+	.team button 
+		width: 80%
+		height: 80%
+		margin: auto
+	
+	/*Picture section*/
+	[class*="picture-"] 
+		padding-top: 10px
+		text-align: center
+		padding: 10px
+	
+	.picture-img img 
+		width: 100%	
+	
+	
+	/*Footer*/
+	footer 
+		height: auto
+	
+	footer .info 
+		height: auto
+	
+
+@media (max-width: 767px)
+	/* For tablets: */
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+
+@media (min-width: 768px) and (max-width: 1199px) 
+	/* For desktop: */
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
