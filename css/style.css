@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway:900");
+/* TEST */
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -19,8 +20,10 @@ header > nav > div ul {
   padding: 0;
   list-style-type: none;
   float: right; }
+
 header > nav > div li {
   display: inline-block; }
+
 header > nav > div a {
   display: block;
   line-height: 50px;
@@ -30,6 +33,7 @@ header > nav > div a {
   text-transform: uppercase; }
   header > nav > div a:hover {
     background: #686d6a; }
+
 header > nav > div img {
   padding: 10px 0; }
 
@@ -227,6 +231,7 @@ header > nav > div img {
   width: 100%;
   padding-top: 100%;
   position: relative; }
+
 .team button {
   width: 100%;
   height: 100%;
@@ -237,6 +242,7 @@ header > nav > div img {
   left: 0;
   bottom: 0;
   right: 0; }
+
 .team h3 {
   text-align: center; }
 
@@ -262,9 +268,10 @@ header > nav > div img {
 
 /* Numbers */
 .numb h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 50px;
   font-weight: bold; }
+
 .numb h3 {
   text-transform: uppercase;
   color: #00C7E8; }
@@ -272,11 +279,11 @@ header > nav > div img {
 /* Footer */
 footer {
   width: 100%;
-  /*height: 350px */
+  /*height: 350px*/
   background: #313332;
   color: #fff; }
   footer .info {
-    /*height: 300px */
+    /*height: 300px*/
     text-align: left;
     margin: 50px; }
   footer .copyright {
@@ -302,32 +309,29 @@ footer {
   margin: 10px;
   cursor: pointer; }
 
-@media(min-width: 768px) and (max-width: 1199px) {
-  /*Header */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /*Header*/
   header > nav > div img {
     float: left; }
   header > nav > div ul {
     float: left; }
   header > nav > div a {
     padding: 0 5px; }
-
-  /*Grid */
+  /*Grid*/
   [class*="col-offset"] {
     margin-left: 0; }
-
   /* Team */
   .team button {
     width: 80%;
     height: 80%;
     margin: auto; } }
+
 @media (max-width: 767px) {
   .container {
     width: 100%; }
-
-  /*Header */
+  /*Header*/
   header {
     width: 100%; }
-
   header > nav div {
     float: none;
     text-align: center; }
@@ -338,114 +342,86 @@ footer {
     float: none;
     display: block;
     text-align: center; }
-
   .slogan {
     padding: 10px 10px 10px 20px; }
-
-  /*Gallery */
+  /*Gallery*/
   .layer {
     display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1); }
-
-  /*Grid */
+  /*Grid*/
   [class*="col-offset"] {
     margin-left: 0; }
-
   /* Team */
   .team button {
     width: 80%;
     height: 80%;
     margin: auto; }
-
-  /*Picture section */
+  /*Picture section*/
   [class*="picture-"] {
     padding-top: 10px;
     text-align: center;
     padding: 10px; }
-
   .picture-img img {
     width: 100%; }
-
-  /*Footer */
+  /*Footer*/
   footer {
     height: auto; }
-
   footer .info {
     height: auto; } }
+
 @media (max-width: 767px) {
   /* For tablets: */
   .col-s-1 {
     width: 8.33%; }
-
   .col-s-2 {
     width: 16.66%; }
-
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
     width: 33.33%; }
-
   .col-s-5 {
     width: 41.66%; }
-
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
     width: 58.33%; }
-
   .col-s-8 {
     width: 66.66%; }
-
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
     width: 83.33%; }
-
   .col-s-11 {
     width: 91.66%; }
-
   .col-s-12 {
     width: 100%; } }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   /* For desktop: */
   .col-m-1 {
     width: 8.33%; }
-
   .col-m-2 {
     width: 16.66%; }
-
   .col-m-3 {
     width: 25%; }
-
   .col-m-4 {
     width: 33.33%; }
-
   .col-m-5 {
     width: 41.66%; }
-
   .col-m-6 {
     width: 50%; }
-
   .col-m-7 {
     width: 58.33%; }
-
   .col-m-8 {
     width: 66.66%; }
-
   .col-m-9 {
     width: 75%; }
-
   .col-m-10 {
     width: 83.33%; }
-
   .col-m-11 {
     width: 91.66%; }
-
   .col-m-12 {
     width: 100%; } }
 
