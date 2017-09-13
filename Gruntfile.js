@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
+	// Project configuration.
 	grunt.initConfig({
 		sass: {
 			options: {
@@ -47,14 +47,14 @@ module.exports = function(grunt) {
 
 
 	});
-  // Load the plugins tasks
+	// Load the plugins tasks
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
   
 
-  // Default task(s).
+	// Default task(s).
 
 	grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
